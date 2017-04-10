@@ -1,6 +1,6 @@
 {% set name = "MDAnalysisTests" %}
-{% set version = "0.15.0" %}
-{% set sha256 = "a41bde911f4bc176fecd0af0947fde4916718d544f1556af72fc878ba6a92bde" %}
+{% set version = "0.16.0" %}
+{% set sha256 = "dd2c289dfb9445c97f6e4f7b14e9380b5eba5661256a589c55c9e2b6214b9b10" %}
 
 package:
   name: {{ name|lower }}
@@ -23,7 +23,7 @@ requirements:
   run:
     - python
     - mdanalysis =={{ version }}
-    - nose
+    - nose ==1.3.7
     - psutil
     - mock
 
