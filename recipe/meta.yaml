@@ -23,9 +23,9 @@ requirements:
   run:
     - python
     - mdanalysis =={{ version }}
-    - nose ==1.3.7
     - psutil
     - mock
+    - pytest
 
 test:
   imports:
