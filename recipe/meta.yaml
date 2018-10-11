@@ -22,7 +22,7 @@ requirements:
     - setuptools
   run:
     - python
-    - mdanalysis =={{ version }}
+    - mdanalysis ==0.19
     - psutil
     - mock
     - pytest
