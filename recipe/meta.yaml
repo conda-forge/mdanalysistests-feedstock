@@ -1,6 +1,6 @@
 {% set name = "MDAnalysisTests" %}
-{% set version = "0.19.2" %}
-{% set sha256 = "be4c27a11d3f55a00dfe54149508ea6df2d816bd25f57c2bebb8804abf4e927e" %}
+{% set version = "0.20.1" %}
+{% set sha256 = "105337d682aafde17c08e46bff04046ef9446daeb902055eb6426af139c8a062" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   skip: True  # [win and py2k]
 
