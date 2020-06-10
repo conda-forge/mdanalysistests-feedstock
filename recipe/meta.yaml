@@ -1,6 +1,6 @@
 {% set name = "MDAnalysisTests" %}
-{% set version = "0.20.1" %}
-{% set sha256 = "105337d682aafde17c08e46bff04046ef9446daeb902055eb6426af139c8a062" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "ee90b2590cb922470637022f69ff53b8c9cea3a6850487bb255b5dadcbc5009b" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
-  skip: True  # [win and py2k]
+  skip: true  # [win and py2k]
 
 requirements:
   build:
@@ -38,7 +38,7 @@ about:
   license: GPL-2.0
   license_family: GPL
   license_file: LICENSE
-  summary: 'Tests and test files for MDAnalysis package'
+  summary: Tests and test files for MDAnalysis package
 
 extra:
   recipe-maintainers:
