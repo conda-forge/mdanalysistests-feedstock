@@ -17,7 +17,7 @@ build:
   skip: true  # [win and py2k]
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
   run:
