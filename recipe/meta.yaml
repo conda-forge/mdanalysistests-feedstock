@@ -14,7 +14,6 @@ source:
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
-  skip: true  # [win]
   skip: true  # [py>38]
   skip: true  # [python_impl=='pypy']
 
@@ -37,7 +36,7 @@ test:
 
 about:
   home: https://github.com/MDAnalysis/mdanalysis
-  license: GPL-2.0
+  license: GPL-2.0-or-later
   license_family: GPL
   license_file: LICENSE
   summary: Tests and test files for MDAnalysis package
@@ -47,3 +46,4 @@ extra:
     - orbeckst
     - richardjgowers
     - kain88-de
+    - ialibay
