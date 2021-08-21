@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
-  skip: true  # [py>38]
+  skip: true  # [py>39]
   skip: true  # [python_impl=='pypy']
 
 requirements:
@@ -24,9 +24,7 @@ requirements:
   run:
     - python
     - mdanalysis =={{ version }}
-    - psutil
-    - mock
-    - pytest
+    - pytest >=3.3.0
     - hypothesis
 
 test:
