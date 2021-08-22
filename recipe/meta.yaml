@@ -1,6 +1,6 @@
 {% set name = "MDAnalysisTests" %}
-{% set version = "1.1.1" %}
-{% set sha256 = "de252dac484461cc07ce6455863292442b8d0c8a916205430898279f51a415ae" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "ad646539e691fd5e850700f8dde6a3675315ee79926af05620f0f71555a7e175" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
-  skip: true  # [py>38]
+  skip: true  # [py>39]
   skip: true  # [python_impl=='pypy']
 
 requirements:
@@ -24,9 +24,7 @@ requirements:
   run:
     - python
     - mdanalysis =={{ version }}
-    - psutil
-    - mock
-    - pytest
+    - pytest >=3.3.0
     - hypothesis
 
 test:
