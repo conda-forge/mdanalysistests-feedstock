@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
-  skip: true  # [py>39]
+  skip: true  # [py>310]
   skip: true  # [python_impl=='pypy']
 
 requirements:
