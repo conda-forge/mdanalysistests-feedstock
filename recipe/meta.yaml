@@ -15,16 +15,13 @@ build:
   number: 1
   noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
-  skip: true  # [py>310]
-  skip: true  # [py<38]
-  skip: true  # [python_impl=='pypy']
 
 requirements:
   host:
-    - python
+    - python >=3.8,<=3.10
     - setuptools
   run:
-    - python
+    - python >=3.8,<=3.10
     - mdanalysis =={{ version }}
     - pytest >=3.3.0
     - hypothesis
