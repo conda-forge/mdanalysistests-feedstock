@@ -1,6 +1,6 @@
 {% set name = "MDAnalysisTests" %}
-{% set version = "2.2.0" %}
-{% set sha256 = "28d17b8c4ac0be3fe424acc9ac250e7bbbad6496eba21d915c58eb389ce04eb2" %}
+{% set version = "2.3.0" %}
+{% set sha256 = "b4dcdbbc6e216a59feb7c3e8cb5c7d9251dbd7aa7ab35f04ad81e93a301c12dc" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
