@@ -1,11 +1,11 @@
-About mdanalysistests
-=====================
+About mdanalysistests-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdanalysistests-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/MDAnalysis/mdanalysis
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdanalysistests-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tests and test files for MDAnalysis package
 
