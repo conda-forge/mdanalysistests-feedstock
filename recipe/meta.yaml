@@ -1,6 +1,6 @@
 {% set name = "MDAnalysisTests" %}
-{% set version = "2.4.3" %}
-{% set sha256 = "6fbdeccdbfb249f76520ee3605d007cd70292187e3754d0184c71e5afe133abb" %}
+{% set version = "2.5.0" %}
+{% set sha256 = "a15b53b7f8bed67900a2bf542bbb3cab81dc71674fa6cddb3248dd11880e4c9d" %}
 
 package:
   name: {{ name|lower }}
@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<=3.11
+    - python >=3.9,<=3.11
     - pip
     - setuptools
   run:
-    - python >=3.8,<=3.11
+    - python >=3.9,<=3.11
     - mdanalysis =={{ version }}
     - pytest >=3.3.0
     - hypothesis
