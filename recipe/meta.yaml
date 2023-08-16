@@ -1,6 +1,6 @@
 {% set name = "MDAnalysisTests" %}
-{% set version = "2.5.0" %}
-{% set sha256 = "a15b53b7f8bed67900a2bf542bbb3cab81dc71674fa6cddb3248dd11880e4c9d" %}
+{% set version = "2.6.0" %}
+{% set sha256 = "16fdd10e5240b606e8f9210b7cbd9e4be110e6b8d79bb6e72ce6250c4731a817" %}
 
 package:
   name: {{ name|lower }}
