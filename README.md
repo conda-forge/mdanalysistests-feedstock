@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdanalysistests
 
 Home: https://github.com/MDAnalysis/mdanalysis
 
-Package license: GPL-2.0-or-later
+Package license: LGPL-2.1-or-later
 
 Summary: Tests and test files for MDAnalysis package
 
@@ -143,8 +143,12 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@RMeli](https://github.com/RMeli/)
+* [@fiona-naughton](https://github.com/fiona-naughton/)
+* [@hmacdope](https://github.com/hmacdope/)
 * [@ialibay](https://github.com/ialibay/)
 * [@kain88-de](https://github.com/kain88-de/)
+* [@lilyminium](https://github.com/lilyminium/)
 * [@orbeckst](https://github.com/orbeckst/)
 * [@richardjgowers](https://github.com/richardjgowers/)
 
