@@ -1,6 +1,7 @@
 {% set name = "MDAnalysisTests" %}
 {% set version = "2.9.0" %}
 {% set sha256 = "8e4942ec3aaef5e93aeb39690293764ab9995550135ff1bd0df2f40cb95c0626" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -18,16 +19,18 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<3.14
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9,<3.14
+    - python >={{ python_min }},<3.14a0
     - mdanalysis =={{ version }}
     - pytest >=3.3.0
     - hypothesis
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - MDAnalysisTests
     - MDAnalysisTests.datafiles
