@@ -23,7 +23,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - python >={{ python_min }},<3.14a0
+    - python >={{ python_min }},<3.15a0
     - mdanalysis =={{ version }}
     - pytest >=3.3.0
     - hypothesis
