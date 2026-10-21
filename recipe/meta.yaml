@@ -1,6 +1,6 @@
 {% set name = "MDAnalysisTests" %}
-{% set version = "2.10.0" %}
-{% set sha256 = "286b8678e19195093a19b57b26d76b8274415d33ac23fc872355639fcb49beef" %}
+{% set version = "2.11.0" %}
+{% set sha256 = "5edeb5b01805da728b202103aa8d2b5974a37f1005ab1fe0150ed7d59702d2ea" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.lower() }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.lower() }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
